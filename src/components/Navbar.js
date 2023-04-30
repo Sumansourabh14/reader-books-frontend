@@ -13,6 +13,9 @@ const Navbar = ({ themeButton }) => {
           <Stack direction="row" alignItems="center" spacing={2}>
             <Box>{themeButton}</Box>
 
+            <Link href="/" className={linkStyles.linkStyles}>
+              Home
+            </Link>
             <Link href="/dictionary" className={linkStyles.linkStyles}>
               Dictionary
             </Link>

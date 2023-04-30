@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import { getWord } from "./globalApi";
+import { getQuote, getWord } from "./globalApi";
 
 export const GlobalContext = createContext();
 
@@ -23,8 +23,24 @@ export const GlobalContextProvider = ({ children }) => {
     }
   };
 
+  const fetchRandomQuote = async () => {
+    try {
+      const data = await getQuote();
+
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
-    <GlobalContext.Provider value={{ fetchWordMeaning, dictionaryError }}>
+    <GlobalContext.Provider
+      value={{
+        fetchWordMeaning,
+        dictionaryError,
+        fetchRandomQuote,
+      }}
+    >
       {children}
     </GlobalContext.Provider>
   );

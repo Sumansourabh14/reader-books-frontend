@@ -1,6 +1,7 @@
 import { Box, Container, Stack } from "@mui/material";
 import Head from "next/head";
 import React from "react";
+import QuoteAuthor from "../components/quoteComponents/QuoteAuthor";
 
 const Home = () => {
   return (
@@ -10,10 +11,15 @@ const Home = () => {
       </Head>
 
       <Container>
-        <Stack sx={{ minHeight: "80vh" }} justifyContent="center">
-          <h1 style={{ fontSize: "6rem" }}>
-            From a Reader. <br /> For the Readers.
-          </h1>
+        <Stack spacing={4} sx={{ padding: "2rem 0" }}>
+          <Stack sx={{ minHeight: "70vh" }} justifyContent="center">
+            <h1 style={{ fontSize: "6rem", textAlign: "center" }}>
+              From a Reader. <br /> For the Readers.
+            </h1>
+          </Stack>
+          <Box>
+            <QuoteAuthor />
+          </Box>
         </Stack>
       </Container>
     </>

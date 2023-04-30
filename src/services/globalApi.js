@@ -8,3 +8,10 @@ export const getWord = async (word) => {
 
   return data;
 };
+
+// Fetch a random quote from an author
+export const getQuote = async () => {
+  const data = await axios.get(`https://api.quotable.io/random`);
+
+  return data;
+};
