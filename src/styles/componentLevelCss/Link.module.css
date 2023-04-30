@@ -1,0 +1,20 @@
+.linkStyles {
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.linkStyles:hover {
+  background: #000;
+}
+
+.signUpStyles {
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  background: #6ad463;
+  text-decoration: none;
+  font-weight: 700;
+}
