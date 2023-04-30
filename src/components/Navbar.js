@@ -5,7 +5,7 @@ import linkStyles from "../styles/componentLevelCss/Link.module.css";
 const Navbar = ({ themeButton }) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="fixed" className="app-bar-backdrop">
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             Reader.com

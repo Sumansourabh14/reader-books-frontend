@@ -42,7 +42,7 @@ const DictionarySearchPage = () => {
         <title>Dictionary {word && `| ${word}`}</title>
       </Head>
 
-      <Container sx={{ padding: "1rem 0" }}>
+      <Container sx={{ padding: "6rem 0 1rem 0" }}>
         {/* <H1 title="Dictionary" /> */}
         <h1 style={{ textAlign: "center" }}>Dictionary</h1>
 

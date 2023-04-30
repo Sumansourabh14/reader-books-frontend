@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.app-bar-backdrop {
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
 audio {
   filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
 }
