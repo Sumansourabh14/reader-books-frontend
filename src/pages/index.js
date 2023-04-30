@@ -12,7 +12,7 @@ const Home = () => {
 
       <Container>
         <Stack spacing={4} sx={{ padding: "2rem 0" }}>
-          <Stack sx={{ minHeight: "70vh" }} justifyContent="center">
+          <Stack sx={{ minHeight: "400px" }} justifyContent="center">
             <h1 style={{ fontSize: "6rem", textAlign: "center" }}>
               From a Reader. <br /> For the Readers.
             </h1>

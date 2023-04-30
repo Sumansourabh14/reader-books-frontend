@@ -1,5 +1,8 @@
 import axios from "axios";
 
+// Consider
+// https://api.hamatim.com/quote (For book quotes)
+
 // Fetch word meaning from https://dictionaryapi.dev/
 export const getWord = async (word) => {
   const data = await axios.get(
