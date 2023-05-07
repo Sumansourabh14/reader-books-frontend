@@ -29,7 +29,9 @@ const QuoteAuthor = () => {
   return (
     <Stack spacing={2} alignItems="center">
       <FormatQuoteIcon sx={{ fontSize: "7rem" }} />
-      <blockquote>{authorQuote?.content}</blockquote>
+      <blockquote style={{ fontSize: "2rem" }}>
+        {authorQuote?.content}
+      </blockquote>
       <h4>~ {authorQuote?.author}</h4>
     </Stack>
   );
