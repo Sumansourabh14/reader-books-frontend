@@ -1,10 +1,10 @@
-import { Button, Container, Stack } from "@mui/material";
-import React, { useContext, useState } from "react";
-import TextInput from "../components/formComponents/TextInput";
-import { MetaHead } from "../components/textComponents/MetaHead";
+import { useContext, useState } from "react";
 import { GlobalContext } from "../services/globalContext";
+import MetaHead from "../components/textComponents/MetaHead";
+import { Button, Container, Stack } from "@mui/material";
+import TextInput from "../components/formComponents/TextInput";
 
-const SignUp = () => {
+const SignUpPage = () => {
   const { signUp, signUpError } = useContext(GlobalContext);
 
   const [username, setUsername] = useState("");
@@ -61,4 +61,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignUpPage;

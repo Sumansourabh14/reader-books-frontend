@@ -14,12 +14,15 @@ export const GlobalContextProvider = ({ children }) => {
     setSignUpError(null);
 
     try {
+      setLoading(true);
       const data = await signUpApi(username, email, password);
       console.log(data);
       console.log("Signed up!");
+      setLoading(false);
     } catch (error) {
       console.log(error);
       setSignUpError(error.response.data.message);
+      setLoading(false);
     }
   };
 
