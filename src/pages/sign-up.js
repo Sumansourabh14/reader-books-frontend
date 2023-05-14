@@ -1,7 +1,7 @@
-import React, { useContext, useState } from "react";
-import { MetaHead } from "../components/textComponents/MetaHead";
 import { Button, Container, Stack } from "@mui/material";
+import React, { useContext, useState } from "react";
 import TextInput from "../components/formComponents/TextInput";
+import { MetaHead } from "../components/textComponents/MetaHead";
 import { GlobalContext } from "../services/globalContext";
 
 const SignUp = () => {

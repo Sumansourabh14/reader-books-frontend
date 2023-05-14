@@ -1,12 +1,12 @@
-import { Button, Container, Stack, TextField } from "@mui/material";
-import Head from "next/head";
+import { Button, Container, Stack } from "@mui/material";
 import React, { useContext, useState } from "react";
-import { GlobalContext } from "../services/globalContext";
 import TextInput from "../components/formComponents/TextInput";
-import { MetaHead } from "../components/textComponents/MetaHead";
+import MetaHead from "../components/textComponents/MetaHead";
+import { GlobalContext } from "../services/globalContext";
+import LoadingButton from "../components/loadingComponents/LoadingButton";
 
 const Login = () => {
-  const { login, loginError } = useContext(GlobalContext);
+  const { loading, login, loginError } = useContext(GlobalContext);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -45,7 +45,12 @@ const Login = () => {
                 required={true}
               />
               <Button variant="contained" type="submit">
-                Login
+                Login{" "}
+                {loading && (
+                  <div style={{ marginLeft: "0.6rem" }}>
+                    <LoadingButton />
+                  </div>
+                )}
               </Button>
             </Stack>
           </form>
